@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  plot-digitizer:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: plot-digitizer
+    ports:
+      - "8080:8080"
